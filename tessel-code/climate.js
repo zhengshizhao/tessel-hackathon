@@ -28,9 +28,9 @@ server.on('request', function (req, res) {
                          console.log(surveillanceData);
                          res.end(surveillanceData, 'binary');
                          // res.end(image, 'binary');
-                    }
-                }
-            }
+                    })
+                })
+            })
             camera.disable();
         });
     }
